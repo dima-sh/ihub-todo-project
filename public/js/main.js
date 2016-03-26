@@ -2,6 +2,12 @@ fetch('/api/projects')
   .then((res) => res.json())
   .then(renderProjects);
 
+function getAllProjects(callback) {
+  return fetch('/api/projects')
+    .then((res) => res.json())
+    .then(callback);
+}
+
 // createProject({ name: 'My second project' })
 //   .then(() => getProjectById(1))
 //   .then(() => updateProjectById(1, { name: 'Changed project' }))
