@@ -1,9 +1,11 @@
 import React from 'react';
+import Header from './header';
 
-class Project extends React.Component {
-  render() {
-    return <article>{this.props.name}</article>;
-  }
-}
+const Project = ({ name, id }) => (
+
+  <article>
+    <Header name={name} projectId={id} />
+  </article>
+);
 
 export default Project;

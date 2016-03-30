@@ -95,7 +95,6 @@ function updateProjectById(id, project) {
     }
   })
   .then((res) => res.json())
-  .then((json) => console.log(json))
 }
 
 function removeProjectById(id) {
